@@ -1,0 +1,11 @@
+Configuration de l'interface AWS cli :
+aws configure
+
+Création de package à deployer :
+aws cloudformation package --template-file <NOM_DU_FICHIER_TEMPLATE> --s3-bucket <STD21088> --output-template-file <NOM_DU_FICHIER_SORTIE>
+
+Deploiement :
+aws cloudformation deploy --template-file <NOM_DU_FICHIER_SORTIE> --stack-name <NOM_DU_STACK>
+
+Verification :
+aws cloudformation describe-stacks --stack-name <NOM_DU_STACK>

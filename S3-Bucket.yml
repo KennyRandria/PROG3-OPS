@@ -9,7 +9,6 @@ Resources:
       Name: "/mon-bucket-s3/nom"
       Type: "String"
       Value: !Ref MonBucketS3
-      Description: "Nom du bucket S3 nouvellement créé"
 
   MonParametreARNSSM:
     Type: "AWS::SSM::Parameter"
@@ -17,4 +16,3 @@ Resources:
       Name: "/mon-bucket-s3/arn"
       Type: "String"
       Value: !GetAtt MonBucketS3.Arn
-      Description: "ARN du bucket S3 nouvellement créé"
